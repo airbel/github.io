@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
@@ -23,5 +23,19 @@
         <button class="add" id="addbtu">新增</button>
 <script type="text/javascript">
 　document.write("這是測試網頁內容");
+  let textC = document.getElementById("content" );
+  let dateC = document.getElementById("date");
+  let timeC = document.getElementById("time");
+
+
+  let butchange = document.getElementById("addbtu");
+    butchange.addEventListener('click',function(){
+    document.write("資料:",textC.value);
+    document.write("<p>")
+    document.write("日期:",dateC.value);
+    document.write("<p>")
+    document.write("時間:",timeC.value);
+    console.log(textC.value,dateC.value,timeC.value);
+    })
 </script>
 </html>
